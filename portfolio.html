@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" href="images/logocropped.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://use.typekit.net/yue1srv.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+   <script src="jquery.flexslider.js"></script>
+   <script type="text/javascript" charset="utf-8">
+   $(window).load(function() {
+     $('.flexslider').flexslider();
+ });
+  </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Portfolio - KMD</title>
+  </head>
+  <body>
+      <div class="wrapper">
+        <header id="myHeader">
+          <div class="headerLogo">
+            <img src="images/logocropped.png" width="125px" height="125px">
+          </div>
+          <div class="titles">
+            <text>Marketing Specialist</text>
+            <span>&bull;</span>
+            <text>Graphic Designer</text>
+            <span>&bull;</span>
+            <text>Junior Front-End Web Developer</text>
+          </div>
+        <div class="menu"></div>
+          <div class="headerAbout">
+          <a href="about.html">
+            <img src="images/about.png" alt="about" height="100px" width="100px">
+          </a>
+        </div>
+          <div class="headerResume">
+          <a href="resume.html">
+            <img src="images/resume.png" alt="resume" height="100px" width="100px">
+          </a>
+        </div>
+          <div class="headerPortfolio">
+          <a href="portfolio.html">
+            <img src="images/portfolio.png" alt="portfolio" height="100px" width="100px">
+          </a>
+        </div>
+          <div class="headerContact">
+            <a href="contact.html">
+            <img src="images/contact.png" alt="contact" height="100px" width="100px">
+            </a>
+          </div>
+      </header>
+        <div class="content">
+          <h1>Portfolio</h1>
+        <article class="page-body"></article>
+        </div>
+        <script>
+        window.onscroll = function() {myFunction()};
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+      </div>
+      <footer>
+          <div class="page-footer">
+              <a class="footerText1" href="about.html">About</a>
+              <a class="footerText2" href="resume.html">Resume</a>
+              <a class="footerText3" href="portfolio.html">Portfolio</a>
+            </div>
+            <h4>
+            <a href="https://www.facebook.com/katie.marsland.5/">
+              <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> </a>
+            <a href="https://www.instagram.com/ktmarsland/?hl=en">
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i> </a>
+            <a href="https://www.linkedin.com/in/katie-marsland-6a827a11a/">
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> </a>
+            <a href="mailto:katiemarsland4@gmail.com">
+              <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> </a>
+            </h4>
+            <div class="footerLogo">
+              <img src="images/logocropped.png" height="100px" width="100px">
+            </div>
+            <text>Copyright &copy 2020 Katie Marsland </text>
+        </footer>
+      </div>
+  </body>
+</html>
